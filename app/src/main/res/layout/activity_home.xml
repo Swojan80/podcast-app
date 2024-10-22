@@ -39,6 +39,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Trending Episodes RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/trendingEpisodesList"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/trendingEpisodesLabel" />
+
     <!-- New Releases Label -->
     <TextView
         android:id="@+id/newReleasesLabel"
@@ -52,6 +62,16 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/trendingEpisodesList" />
+
+    <!-- New Releases RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/newReleasesList"
+        android:layout_width="match_parent"
+        android:layout_height="214dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/newReleasesLabel" />
 
     <!-- Footer with Home, Search, and Profile buttons -->
     <LinearLayout
